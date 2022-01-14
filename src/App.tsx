@@ -14,7 +14,8 @@ function App() {
     <div className="App">
       {
         user ?
-          <span>{user.displayName} <button onClick={signOut}>Sign Out</button> <img src={user.photoURL ?? ''} /></span> :
+          <span>{user.displayName} <button onClick={signOut}>Sign Out</button>
+            <img className={'profile-pic'} src={user.photoURL ?? ''} /></span> :
           <button onClick={signInWithGoogle}>Sign in</button>
       }
       <AddCommuteForm />
