@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import AddCommuteForm from './AddCommuteForm';
 import CommuteList from './CommuteList';
@@ -15,7 +14,7 @@ function App() {
       {
         user ?
           <span>{user.displayName} <button onClick={signOut}>Sign Out</button>
-            <img className={'profile-pic'} src={user.photoURL ?? ''} /></span> :
+            <img className={'profile-pic'} src={user.photoURL ?? ''} alt="Profile" /></span> :
           <button onClick={signInWithGoogle}>Sign in</button>
       }
       <AddCommuteForm />
